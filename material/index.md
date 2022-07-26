@@ -6,7 +6,6 @@ Bem vindo ao curso de SuperComputação 2022/2.
     * Luciano Pereira Soares <lpsoares@insper.edu.br>
 
 * **Horário das aulas**:
-    Terça - 9h45, Sexta - 07h30
     * TER - 9:45
     * SEX - 13:30
     * Atendimento TER - 15:30
