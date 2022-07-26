@@ -1,10 +1,10 @@
-site_name: SuperComputação - 2022/1
+site_name: SuperComputação - 2022/2
 site_author: 
 
 extra:
     materia: SuperComputação
-    professor: Andre Filipe de M. Batista, Luciano Silva
-    semestre: 2022/1
+    professor: Luciano Pereira Soares
+    semestre: 2022/2
     url_acompanhamentos: http://localhost:8081
     id_curso: 1
 

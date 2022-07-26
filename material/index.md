@@ -1,14 +1,15 @@
 # SuperComputação
 
-Bem vindo ao curso de SuperComputação 2022/1. 
+Bem vindo ao curso de SuperComputação 2022/2.
 
 * **Professores**: 
-    * André Filipe M. Batista
-    * Luciano Silva
+    * Luciano Pereira Soares <lpsoares@insper.edu.br>
 
 * **Horário das aulas**:
-    * Turma A - Prof. André Filipe:  Terça - 9h45, Sexta - 07h30
-    * Turma B - Prof. Luciano Silva:  Quarta - 13h30, Sexta - 13h30
+    Terça - 9h45, Sexta - 07h30
+    * TER - 9:45
+    * SEX - 13:30
+    * Atendimento TER - 15:30
 
 
 ## Avaliação
