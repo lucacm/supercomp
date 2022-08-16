@@ -210,16 +210,16 @@ Você vai perceber, ao executar a atividade anterior, que boa parte do tempo é 
 !!! info "Entrada e saída de dados são operações muito lentas"
 
 
-!!! example 
+!!! exercise 
     Faça o teste da demonstração em seu próprio programa e anote abaixo, para as duas versões de `calcula_distancias`,
 
     1. o tempo relativo de execução 
     1. o número absoluto de instruções executadas
 
-!!! question
+!!! question medium
     O número absoluto de intruções executadas diminuiu significativamente depois de nossa otimização? Teoricamente só calculamos metade da matriz, esse número é quase metade da versão não otimizada? Você consegue dizer por que?
 
-    ??? details "Resposta"
+    !!! answer
         Deve ter havido uma diminuição, mas não chega nem perto de metade. Isso ocorre por várias razões:
         
         1. nosso `for` duplo continua percorrendo a matriz inteira, apesar de só fazer o cálculo em metade das posições. 
@@ -229,10 +229,10 @@ Com isso em mente, vamos agora otimizar a função `calcula_distancias`. Já sab
 
 !!! info "Dois algoritmos de mesma complexidade computacional podem ter tempos de execução muito diferentes"
 
-!!! question
+!!! question long
     A resposta da questão anterior indica que só usar um `if` para evitar o cálculo repetido não é suficiente. Precisamos efetivamente fazer um `for` que percorre só metade da matriz. Supondo que a matriz já esteja inteira alocada, escreva em pseudo-código como fazê-lo.
 
-    ??? note "Resposta"
+    !!! answer
         ```
         para i=1..N:
             para j=i..N:
@@ -259,10 +259,10 @@ A figura abaixo exemplifica esse layout de memória:
 
 ![Matriz "deitada" linha a linha](matriz.png)
 
-!!! question
+!!! question short
     Em uma matriz de tamanho `4x7` (4 linhas, 7 colunas), qual é o elemento do vetor que representa a posição `2x5` (linha 3, coluna 6)?
 
-    ??? details
+    !!! answer
         Estamos considerando que começamos a contar as linhas e colunas do zero. A posição do vetor é `19`. Este número é obtido pela expressão
 
         `i * c + j`
@@ -276,8 +276,8 @@ A figura abaixo exemplifica esse layout de memória:
 !!! tip
     Conseguimos redimensionar um vetor usando o método `resize`, que recebe o novo número de elementos do vetor. 
 
-!!! example
+!!! exercise
     Faça uma terceira versão de `calcula_distancias`, desta vez usando o layout de memória acima. Verifique que o programa continua retornando os mesmos resultados que as versões anteriores. 
 
-!!! question
+!!! question long
     Rode novamente os testes de profiling e verifique o número de instruções para esta nova versão. Compare este valor com os anteriores e comente. 
