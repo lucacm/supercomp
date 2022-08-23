@@ -64,15 +64,6 @@ Cada aluno irá adicionar sua solução ao seu repositório, que já irá conter
 As etapas do projeto serão disponibilizadas depois de discussões em sala de aula e estarão conectadas com uma aula específica.
 
 * Atividade 1 - [heurística da cidade mais próxima](heuristica): **Entrega 30/09**
-<!--
-* Atividade 2 - [busca local - troca de ordem](busca-local): **Entrega 30/09**
-* Atividade 3 - [busca exaustiva](busca-exaustiva): **Entrega 13/10**
-* Atividade 4 - [implementações sequenciais eficientes](desempenho-sequencial): **Entrega 04/11**
-* Atividade 5 - [paralelismo multi-core](multi-core): **Entrega 11/11**
-* Atividade 6 - [paralelismo em GPU](gpu): **Entrega 25/11**
-* Atividade 7 - [comparações de desempenho](relatorio): **Entrega 25/11** 
-* Atividade 8 - [medição final de desempenho](desempenho-final): **Entrega 04/12**
--->
 
 ## Verificação de resultados
 
