@@ -20,9 +20,9 @@ Compile o código e execute.
 
 Você sabe dizer qual a diferença de `naive_sum` e `improved_sum`?
 
-<pre style="background-color: #eeeeee; font-size: 12px;">
-#include &lt;iostream&gt;
-#include &lt;algorithm&gt;
+```cpp
+#include <iostream>;
+#include <algorithm>;
 using namespace std;
 
 constexpr int M = 2048;
@@ -54,7 +54,7 @@ int main() {
     cout << improved_sum(b) << endl;
     return 0;
 }
-</pre>
+```
 
 Vamos usar o `Valgrind` para verificar se há diferenças entre `naive_sum` e `improved_sum`. 
 
