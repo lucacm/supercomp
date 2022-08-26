@@ -15,7 +15,7 @@ A disciplina utilizará a linguagem C++ para implementação dos programas. Ela 
 Programas em C++ são compilados com o comando `g++`. Ele funciona igual ao `gcc` que vocês já usaram em Desafios e Sistemas Hardware-Software.
 
 ```
-$> g++ -Wall -O3 arquivo.cpp -o executavel
+$> g++ -Wall -O3 -std=c++11 arquivo.cpp -o executavel
 ```
 
 ## Entrada e saída em C++
@@ -24,11 +24,12 @@ Em C usamos as funções `printf` para mostrar dados no terminal e `scanf` para 
 
 A maior vantagem de usar `cin` e `cout` é que não precisamos mais daquelas strings de formatação estranhas com `%d`, `%s` e afins. Podemos passar variáveis diretamente para a saída do terminal usando o operador `<<`. Veja um exemplo abaixo. 
 
-```cpp
+<pre style="background-color: #eeeeee; font-size: 12px;">
 int a = 10;
 double b = 3.2;
 std::cout << "Saída: " << a << ";" << b << "\n";
-```
+</pre>
+
 
 
 !!! hint "E esse `std::`?"
@@ -63,7 +64,7 @@ A implementação de algoritmos definidos usando expressões matemáticas é uma
 
 A estrutura `std::vector` é um vetor dinâmico que tem funcionalidades parecidas com a lista de Python ou o `ArrayList` de Java. O código abaixo exemplifica seu uso e mostra algumas de suas funções. Note que omitimos o uso de `std` no código abaixo.
 
-```cpp
+<pre style="background-color: #eeeeee; font-size: 12px;">
 int n;
 cin >> n;
 vector<double> vec;
@@ -74,7 +75,7 @@ cout << "Tamanho do vetor: " << vec.size() << "\n";
 cout << "Primeiro elemento: " << vec.front() << "\n";
 cout << "Último elemento: " << vec.back() << "\n";
 cout << "Elemento 3: " << vec[2] << "\n";
-```
+</pre>
 
 Alguns pontos interessantes deste exemplo:
 
@@ -125,7 +126,7 @@ $$
     2. faça uma implementação o mais simples possível. Vamos melhorá-la nas próximas tarefas.
 
     !!! answer
-        ```
+        <pre style="background-color: #eeeeee; font-size: 12px;">
         leia inteiro N
         leia vetores X e Y 
 
@@ -136,7 +137,7 @@ $$
                 DX = X[i] - X[j]
                 DY = Y[i] - Y[j]
                 D[i,j] = sqrt(DX*DX + DY*DY)
-        ```
+        </pre>
 
 
 !!! question medium
@@ -168,22 +169,22 @@ Isto é considerado uma *feature* em `C++`: por padrão toda variável é passad
 
 Em *C* podemos passar variáveis **por referência** passando um ponteiro para elas. Apesar de funcional, isso não é muito prático pois temos que acessar a variável sempre usando `*`.  Em *C++* temos um novo recurso: referências. Ao declarar uma variável como uma referência crio uma espécie de *ponteiro constante* que sempre acessa a variável apontada. Veja o exemplo abaixo.
 
-```cpp
+<pre style="background-color: #eeeeee; font-size: 12px;">
 int x = 10;
-int &ref = x; // referências são declaradas colocando & na frente do nome da variável
+int &ref = x; // referências são declaradas com & na frente da variável
 // a partir daqui ref e x representam a mesma variável
 ref = 15;
 cout << x << "\n"; // 15
-```
+</pre>
 
 O mesmo poderia ser feito com ponteiros (como mostrado abaixo). A grande vantagem da referência é que não precisamos usar `*ref` para nos referirmos à variável `x`! Na atribuição também podemos usar direto `int &ref = x`, o que torna o código mais limpo e fácil de entender.  
 
-```cpp
+<pre style="background-color: #eeeeee; font-size: 12px;">
 int x = 10;
 int *ref = &x; // precisamos de &x para apontar ref para a variável x
 *ref = 15; // precisamos indicar *ref para atribuir a variável x
 cout << x << "\n"; // 15
-```
+</pre>
 
 !!! tip "Dicas"
     Note que uma referência tem que ser inicializada com a variável a que ela se refere. Ou seja, ao declarar tenho que já indicar a variável destino e esse destino não pode ser modificado. 

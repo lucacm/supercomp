@@ -1,12 +1,15 @@
 # 04 - Medição de desempenho
 
+!!! pdf
+    ![](slides.pdf)
+
 Apesar de podermos medir o tempo que nosso programa demora usando o comando `time`, não conseguimos nenhuma informação importante de qual parte do programa está consumindo mais tempo. Este processo de dissecar um programa e entender exatamente qual parte demora quanto é chamada de **Profiling**. 
 
 !!! warning "Software"
     Para esta aula precisaremos dos seguintes pacotes instalados. 
 
     * `valgrind` - ferramenta de análise de código executável
-    * `kcachegrind` - visualizador de resultados do `valgrind`
+    * `kcachegrind` ou `qcachegrind` - visualizador de resultados do `valgrind`
 
 
 ## Warm-up: O problema da soma de uma matriz
@@ -17,9 +20,9 @@ Compile o código e execute.
 
 Você sabe dizer qual a diferença de `naive_sum` e `improved_sum`?
 
-```cpp
-#include<iostream>
-#include<algorithm>
+<pre style="background-color: #eeeeee; font-size: 12px;">
+#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
 using namespace std;
 
 constexpr int M = 2048;
@@ -51,14 +54,14 @@ int main() {
     cout << improved_sum(b) << endl;
     return 0;
 }
-```
+</pre>
 
 Vamos usar o `Valgrind` para verificar se há diferenças entre `naive_sum` e `improved_sum`. 
 
 Supondo que o seu arquivo se chama `sum.cpp` execute:
 
 ```
-g++ -Wall -O3 -g sum.cpp -o sum
+g++ -Wall -std=c++11 -O3 -g sum.cpp -o sum
 ```
 
 E execute então programa via `valgrind`:
@@ -69,7 +72,7 @@ valgrind --tool=callgrind ./sum
 
 O `valgrind` irá retornar algo como:
 
-```
+<pre style="background-color: #eeeeee; font-size: 12px;">
 ==3079146== Callgrind, a call-graph generating cache profiler
 ==3079146== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
 ==3079146== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
@@ -83,7 +86,7 @@ O `valgrind` irá retornar algo como:
 ==3079146== Collected : 50553796
 ==3079146== 
 ==3079146== I   refs:      50,553,796
-```
+</pre>
 
 Onde `3079146` é o PID da execução. Na sua máquina será um outro valor. Ele também gerou um arquivo `callgrind.out.{PID}`. 
 
@@ -95,7 +98,7 @@ callgrind_annotate callgrind.out.3079146 sum.cpp
 
 E seu output será como segue:
 
-```
+<pre style="background-color: #eeeeee; font-size: 12px;">
 --------------------------------------------------------------------------------
 Profile data file 'callgrind.out.3079146' (creator: callgrind-3.15.0)
 --------------------------------------------------------------------------------
@@ -172,7 +175,7 @@ Ir
 --------------------------------------------------------------------------------
 31,479,821  events annotated
 
-```
+</pre>
 
 O que você pode dizer sobre o desempenho do programa? Por que há diferença de `instruction fetch` (IR) entre `naive_sum` e `improved_sum`?
 
@@ -185,7 +188,7 @@ O que você pode dizer sobre o desempenho do programa? Por que há diferença de
 Compile o código-fonte da implementação ingênua que fizemos na aula passada, com profiling habilitado para medir os tempos de execução. 
 
 ```
-g++ -g euclides-ingenuo.cpp -o euclides-ingenuo
+g++ -g -std=c++11 euclides-ingenuo.cpp -o euclides-ingenuo
 ```
 
 Após este passo, execute o programa usando o `valgrind` com as opções abaixo.
@@ -200,6 +203,13 @@ Para mostrar os resultados usando o `kcachegrind` usamos o seguinte comando.
 ```
 kcachegrind callgrind.out.(pid aqui)
 ```
+
+ou
+
+```
+qcachegrind callgrind.out.(pid aqui)
+```
+
 
 O que tomou mais tempo de execução da versão ingênua?
 
@@ -233,7 +243,7 @@ Com isso em mente, vamos agora otimizar a função `calcula_distancias`. Já sab
     A resposta da questão anterior indica que só usar um `if` para evitar o cálculo repetido não é suficiente. Precisamos efetivamente fazer um `for` que percorre só metade da matriz. Supondo que a matriz já esteja inteira alocada, escreva em pseudo-código como fazê-lo.
 
     !!! answer
-        ```
+        <pre style="background-color: #eeeeee; font-size: 12px;">
         para i=1..N:
             para j=i..N:
                 DX = X[i] - X[j]
@@ -241,7 +251,7 @@ Com isso em mente, vamos agora otimizar a função `calcula_distancias`. Já sab
                 DIST = sqrt(DX*DX + DY*DY)
                 D[i,j] = DIST
                 D[j,i] = DIST
-        ```
+        </pre>
 
 
 
