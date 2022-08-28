@@ -24,13 +24,11 @@ Em C usamos as funções `printf` para mostrar dados no terminal e `scanf` para 
 
 A maior vantagem de usar `cin` e `cout` é que não precisamos mais daquelas strings de formatação estranhas com `%d`, `%s` e afins. Podemos passar variáveis diretamente para a saída do terminal usando o operador `<<`. Veja um exemplo abaixo. 
 
-<pre style="background-color: #eeeeee; font-size: 12px;">
+```C++
 int a = 10;
 double b = 3.2;
 std::cout << "Saída: " << a << ";" << b << "\n";
-</pre>
-
-
+```
 
 !!! hint "E esse `std::`?"
     Em `C++` podemos ter várias funções, variáveis e objetos em geral com o mesmo nome. Para evitar que eles colidam e não se saiba a qual estamos nos referindo cada nome deve ser definido um `namespace` (literalmente *espaco de nomes*). Podemos ter `namespace`s aninhados.Por exemplo, `std::chrono` contém as funções relacionadas contagem de tempo durante a execução de um programa. 
@@ -64,7 +62,7 @@ A implementação de algoritmos definidos usando expressões matemáticas é uma
 
 A estrutura `std::vector` é um vetor dinâmico que tem funcionalidades parecidas com a lista de Python ou o `ArrayList` de Java. O código abaixo exemplifica seu uso e mostra algumas de suas funções. Note que omitimos o uso de `std` no código abaixo.
 
-<pre style="background-color: #eeeeee; font-size: 12px;">
+```C++
 int n;
 cin >> n;
 vector<double> vec;
@@ -75,7 +73,7 @@ cout << "Tamanho do vetor: " << vec.size() << "\n";
 cout << "Primeiro elemento: " << vec.front() << "\n";
 cout << "Último elemento: " << vec.back() << "\n";
 cout << "Elemento 3: " << vec[2] << "\n";
-</pre>
+```
 
 Alguns pontos interessantes deste exemplo:
 
