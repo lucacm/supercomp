@@ -5,6 +5,8 @@ Nosso projeto do semestre será o [**Caixeiro Viajante**](https://en.wikipedia.o
 1. visite todas as cidades
 2. tenha o menor comprimento possível
 
+[Vídeo em Português](https://www.youtube.com/watch?v=_vKMyRj855A)
+
 Note que podemos começar de qualquer cidade, já que nosso caminho é fechado. Ou seja, ele começa e termina no mesmo lugar.
 
 Este é um problema **muito** estudado em otimização e existem vários métodos que proporcionam soluções muito boas em pouquíssimo tempo. Por exemplo, o Gif abaixo usa uma técnica de otimização chamada [Simulated annealing](https://en.wikipedia.org/wiki/Simulated_annealing).

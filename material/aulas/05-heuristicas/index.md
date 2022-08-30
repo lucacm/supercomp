@@ -1,5 +1,8 @@
 # 05 - Heurísticas
 
+!!! pdf
+    ![](slides.pdf)
+
 A atividade prática de hoje consiste em implementar heurísticas para a solução do problema da **Mochila binária**.
 
 ## Resumo do problema
