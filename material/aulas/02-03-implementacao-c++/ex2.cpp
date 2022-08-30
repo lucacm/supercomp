@@ -1,11 +1,15 @@
 #include <iostream>
 #include <vector>
+#include <iomanip>
+#include <cmath>
+
+
 using namespace std;
 
 int main(){
 
     int n;
-    cin >> n;
+    cin >> n; 
 
     double x(0);
     vector<double> vec;
@@ -16,13 +20,22 @@ int main(){
 
     double sum(0);
 
-    for (double j = 0; j <= vec.size(); j++) {
-        sum += vec[j];
+    for (double i = 0; i < n; i++) {
+        sum += vec[i];
     }
 
-    double mean = sum/vec.size();
+    double mean = sum/n;
+    double sum2(0);
 
-    cout << "Média: " << mean << "\n";
+    for (double i = 0; i < n; i++) {
+        sum2 += pow((vec[i]-mean), 2);
+    }
+
+    double var = sum2/n;
+    
+    cout << "Média: " << fixed << setprecision(10) << mean << "\n";
+    cout << "Variância: " << fixed << setprecision(10) << var << "\n";
+
 
 
     // cout << "Tamanho do vetor: " << vec.size() << "\n";
