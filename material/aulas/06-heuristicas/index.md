@@ -1,4 +1,4 @@
-# 05 - Heurísticas
+# 06 - Heurísticas
 
 !!! pdf
     ![](slides.pdf)
@@ -8,6 +8,9 @@ A atividade prática de hoje consiste em implementar heurísticas para a soluç�
 ## Resumo do problema
 
 Dados `N` objetos e uma mochila que comporta até `W` quilos, cada um com peso $w_i$ e valor $v_i$, selecionar objetos com o maior valor possível que caibam dentro da mochila.
+
+Here is the correct input: $k^{\prime 4}_{i}$. 
+This is the original input: $k'^4_{i}$.
 
 **Entrada**:
 ```

@@ -1,7 +1,4 @@
-# A - Reforço C++
-
-!!! pdf
-    ![](slides.pdf)
+# Estudando se vou colocar na aula
 
 O objetivo dessquência apresentada para que você consiga fazer.
 
