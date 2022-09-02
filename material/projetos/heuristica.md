@@ -8,4 +8,4 @@ Esta heurística dá bons resultados e pode ser implementada de maneira bastante
 
 ## Avaliação de resultados
 
-Os arquivos `in/out-*.txt` na pasta *heuristico* representam a saída esperada de seu programa para uma série de entradas exemplo. Use o corretor seguindo as instruções [neste link](/projetos/#verificacao-de-resultados)
+Os arquivos `in/out-*.txt` na pasta *heuristico* representam a saída esperada de seu programa para uma série de entradas exemplo. Use o corretor seguindo as instruções [neste link](/supercomp/projetos/#verificacao-de-resultados)

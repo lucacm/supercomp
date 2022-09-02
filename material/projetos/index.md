@@ -55,7 +55,6 @@ c1 .... cN
     1. Os formatos de entrada e saída deverão ser respeitados de maneira estrita
     2. Algumas entregas pedirão também informações mostradas na saída de erros `std:cerr`
     3. Os scripts de correção serão atualizados durante o semestre.
-    4.
 
 ## Entregas e Datas importantes
 
@@ -65,7 +64,7 @@ Cada aluno irá adicionar sua solução ao seu repositório, que já irá conter
 
 As etapas do projeto serão disponibilizadas depois de discussões em sala de aula e estarão conectadas com uma aula específica.
 
-* Atividade 1 - [heurística da cidade mais próxima](heuristica): **Entrega 30/09**
+* Atividade 1 - [heurística da cidade mais próxima](heuristica) [__Entrega__: _Sugerida 9/09_; _Máxima 30/09_]
 
 ## Verificação de resultados
 
@@ -73,7 +72,7 @@ As etapas do projeto serão disponibilizadas depois de discussões em sala de au
 3. O corretor automático depende do pacote `grading-tools`, que deverá ser instalado como abaixo.
 
 ```shell
-$> python3.8 -m pip install --user git+https://github.com/igordsm/grading-tools
+$> python3 -m pip install --user git+https://github.com/lpsoares/grading-tools
 ```
 
 ??? tip "Python 3.8 no Ubuntu"
@@ -85,7 +84,7 @@ $> python3.8 -m pip install --user git+https://github.com/igordsm/grading-tools
 
     A partir daí poderá seguir normalmente as instruções desta página.
 
-4. Com isso configurado, é só compilar seu programa e rodar `python3.8 corretor.py executavel`.
+4. Com isso configurado, é só compilar seu programa e rodar `python3 corretor.py algoritmo`.
 5. Para baixar os novos exercícios é só rodar `git pull`.
 6. Os exercícios serão entregues criando um commit com sua resposta e dando `git push`.
 
