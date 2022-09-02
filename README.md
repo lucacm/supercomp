@@ -2,7 +2,7 @@
 
 ## build 
 ```
-docker build --tag active-handout:supercomp -f ./Dockerfile
+docker build --tag active-handout:supercomp . 
 ```
 
 
