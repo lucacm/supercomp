@@ -1,4 +1,7 @@
-# 06 - Algoritmos Aleatorizados
+# 07 - Algoritmos Aleatorizados
+
+!!! pdf
+    ![](slides.pdf)
 
 Um gerador de números pseudo-aleatórios (RNG) é um algoritmo **determinístico** que gera uma sequência de números que **parece** aleatória. Essa frase possui dois termos importantes que precisamos destrinchar:
 
