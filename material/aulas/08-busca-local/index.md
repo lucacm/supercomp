@@ -1,5 +1,8 @@
 # 07 - Busca local
 
+!!! pdf
+    ![](slides.pdf)
+
 Nesta aula trabalharemos com um algoritmo chamado "Busca local", que consiste basicamente em fazer pequenas atualizações que melhoram sucessivamente uma solução.
 
 ## Solução aleatorizada
