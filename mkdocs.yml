@@ -33,8 +33,8 @@ nav:
         - "06 - Heurísticas": aulas/06-heuristicas/index.md
         - "07 - Aleatorização": aulas/07-aleatorizacao/index.md
         - "08 - Busca Local": aulas/08-busca-local/index.md
-        # - "09 - Busca Exaustiva": aulas/09-busca-global/index.md
-        # - "10 - Comparação de desempenho": aulas/10-busca-global-II/index.md
+        - "09 - Busca Exaustiva": aulas/09-busca-global/index.md
+        - "10 - Comparação de desempenho": aulas/10-busca-global-II/index.md
         # - "11 - Branch and Bound": aulas/11-branch-and-bound/index.md
         # - "12 - Revisão para P1": aulas/12-branch-and-bound/revisao.md
         # - "13 - Paralelismo": aulas/13-paralelismo/index.md
