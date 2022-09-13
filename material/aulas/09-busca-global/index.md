@@ -1,4 +1,7 @@
-# 08 - Busca exaustiva
+# 09 - Busca exaustiva
+
+!!! pdf
+    ![](slides.pdf)
 
 ## Pseudo-código
 

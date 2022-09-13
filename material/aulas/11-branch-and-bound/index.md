@@ -1,4 +1,4 @@
-# 10 - Branch and Bound
+# 11 - Branch and Bound
 
 Vamos começar nossa atividade instrumentando nossa busca exaustiva. Dado que a promessa do nosso algoritmo *Branch and Bound* é evitar chegar até o fim de uma solução parcial que não tem chance de ser ótima, faz todo sentido então contarmos quantas vezes chegamos até o fim.
 
