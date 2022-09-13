@@ -9,18 +9,17 @@ struct Bolinha { // This structure is named "objeto"
   int w;
 };
 
-
 bool myfunction (Bolinha i,Bolinha j) { return (i.v > j.v); }
 
 int main()
 {
-    int n;
+    int N;
     int W;
-    cin >> n;
+    cin >> N;
     cin >> W;
     vector<Bolinha> mochila;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < N; i++)
     {
         Bolinha bolinha;
         bolinha.id = i;
@@ -30,11 +29,26 @@ int main()
     }
 
     sort (mochila.begin(), mochila.end(), myfunction);
-
-    for (int i = 0; i < mochila.size(); i++)
-    {
-        cout << mochila[i].v << endl;
-    }
     
+    int peso = 0;
+    int valor = 0;
+    vector<int> resposta; //vetor inicializado com 0
+    int T = 0; // número de objetos selecionados
+
+    for (int i = 0; i < N; i++)
+    {
+        if (peso + mochila[i].w < W)
+        {
+            resposta.push_back(mochila[i].id);
+            peso += mochila[i].w;
+            valor += mochila[i].v;
+            T++;
+        }
+    }
+    cout << "peso: " << peso << "/valor: " << valor << endl;
+    for (int i = 0; i < resposta.size(); i++)
+    {
+        cout << "resposta: " << resposta[i] << endl;
+    }
     return 0;
 }
