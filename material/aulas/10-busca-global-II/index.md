@@ -1,4 +1,4 @@
-# 09 - Comparação de resultados
+# 10 - Comparação de resultados
 
 Já implementamos diversos algoritmos para o problema da mochila binária e chegou a hora de compararmos os resultados por eles obtidos. Nossa ideia aqui é exercitar nossa capacidade de responder perguntas abertas com base em dados.
 

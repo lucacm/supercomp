@@ -32,14 +32,14 @@ nav:
         - "05 - Reforço C++": aulas/05-reforco-c++/index.md
         - "06 - Heurísticas": aulas/06-heuristicas/index.md
         - "07 - Aleatorização": aulas/07-aleatorizacao/index.md
-        # - "08 - Busca Local": aulas/07-busca-local/index.md
-        # - "09 - Busca Exaustiva": aulas/08-busca-global/index.md
-        # - "10 - Comparação de desempenho": aulas/09-busca-global-II/index.md
-        # - "11 - Branch and Bound": aulas/10-branch-and-bound/index.md
-        # - "12 - Revisão para P1": aulas/10-branch-and-bound/revisao.md
-        # - "13 - Paralelismo": aulas/11-paralelismo/index.md
+        - "08 - Busca Local": aulas/08-busca-local/index.md
+        - "09 - Busca Exaustiva": aulas/09-busca-global/index.md
+        - "10 - Comparação de desempenho": aulas/10-busca-global-II/index.md
+        # - "11 - Branch and Bound": aulas/11-branch-and-bound/index.md
+        # - "12 - Revisão para P1": aulas/12-branch-and-bound/revisao.md
+        # - "13 - Paralelismo": aulas/13-paralelismo/index.md
         # - "14 - Paralelismo - Exercício / Efeitos Colaterais" : aulas/12-efeitos-colaterais/index.md
-        # - "15 - Paralelismo - Efeitos Colaterais II":  aulas/13-efeitos-colaterais-II/index.md
+        # - "15 - Paralelismo - Efeitos Colaterais II":  aulas/14-efeitos-colaterais-II/index.md
         # - "16 - GPU - Introdução":  aulas/14-intro-gpu/index.md
         # - "17 - GPU - Iteradores": aulas/15-gpu-iteradores/index.md
         # - "18 - GPU - Customização": aulas/16-gpu-customizacao/index.md
