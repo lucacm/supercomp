@@ -29,6 +29,14 @@ int main()
     }
 
     sort (mochila.begin(), mochila.end(), myfunction);
+
+    for (int i = 0; i < N; i++)
+    {
+        cout << "id: " << mochila[i].id
+        << "/value: " << mochila[i].v
+        << "/weight: " << mochila[i].w
+        << endl;
+    }
     
     int peso = 0;
     int valor = 0;
