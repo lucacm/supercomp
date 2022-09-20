@@ -9,7 +9,7 @@ struct Bolinha { // This structure is named "Bolinha"
   int w;
 };
 
-bool myfunction (Bolinha i,Bolinha j) { return (i.v > j.v); }
+bool myfunction (Bolinha i,Bolinha j) { return (i.w < j.w); }
 
 int main()
 {
