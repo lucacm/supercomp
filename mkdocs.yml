@@ -35,7 +35,7 @@ nav:
         - "08 - Busca Local": aulas/08-busca-local/index.md
         - "09 - Busca Exaustiva": aulas/09-busca-global/index.md
         - "10 - Comparação de desempenho": aulas/10-busca-global-II/index.md
-        # - "11 - Branch and Bound": aulas/11-branch-and-bound/index.md
+        - "11 - Branch and Bound": aulas/11-branch-and-bound/index.md
         # - "12 - Revisão para P1": aulas/12-branch-and-bound/revisao.md
         # - "13 - Paralelismo": aulas/13-paralelismo/index.md
         # - "14 - Paralelismo - Exercício / Efeitos Colaterais" : aulas/12-efeitos-colaterais/index.md
