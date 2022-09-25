@@ -24,7 +24,7 @@ Todas as perguntas acima são abertas. Elas admitem diferentes respostas depende
 
     são ruins pois não deixam explícito as expectativas de quem as escreveu. Por exemplo, poderíamos ainda perguntar:
 
-    * "A é melhor que B"** sob qual métrica**?
+    * "A é melhor que B" **sob qual métrica**?
     * **O que é considerado** "rápido, devagar ou significativo"? **1 minuto é rápido ou devagar** (depende da aplicação)
     * **Qual é o critério usado para** "valer a pena"? Tempo? Valor da mochila? O quão próximo do ótimo vale a pena?
 
