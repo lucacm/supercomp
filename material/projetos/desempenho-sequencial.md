@@ -16,8 +16,3 @@ Os testes de desempenho não irão considerar a saída de erros, verificando som
 !!! danger
     Dado que estamos permitindo que o programa cheque se está rodando no modo medição de desempenho, se for feito algo além do desligamento dos `print` seu trabalho automaticamente falha nesta atividade. 
 
-!!! danger
-    Usuários de Mac, o cpp padrão do Mac baseado no clang não suporta OpenMP.
-    A proposta para suportar o openmp é instalar o g++ do homebrew: brew install gcc
-    Crie um link: ln -s /opt/homebrew/bin/g++-12 /opt/homebrew/bin/g++
-    Depois adicione no seu ~/.zshrc: export PATH="/opt/homebrew/bin:$PATH"
