@@ -1,4 +1,4 @@
-# 12/13 - Introdução a paralelismo
+# 12/13/14 - Introdução a paralelismo
 
 !!! pdf
     ![](slides.pdf)
