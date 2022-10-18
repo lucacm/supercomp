@@ -67,8 +67,8 @@ As etapas do projeto serão disponibilizadas depois de discussões em sala de au
 * Atividade 1 - [heurística da cidade mais próxima](heuristica) [__Entrega__: _Sugerida 9/09_; _Máxima 30/09_]
 * Atividade 2 - [busca local - troca de ordem](busca-local): [__Entrega__: _Sugerida 16/09_; _Máxima 30/09_]
 * Atividade 3 - [busca exaustiva](busca-exaustiva): [__Entrega__: _Sugerida 23/09_; _Máxima 30/09_]
-* Atividade 4 - [implementações sequenciais eficientes](desempenho-sequencial): [__Entrega__: _Sugerida 21/10_; _Máxima 1/12_]
-[//]: # (* Atividade 5 - [paralelismo multi-core](multi-core):)
+[//]: # (* Atividade 4 - [implementações sequenciais eficientes](desempenho-sequencial):)
+* Atividade 4 - [paralelismo multi-core](multi-core): [__Entrega__: _Sugerida 25/10_; _Máxima 1/12_]
 [//]: # (* Atividade 6 - [paralelismo em GPU](gpu):)
 [//]: # (* Atividade 7 - [comparações de desempenho](relatorio):)
 [//]: # (* Atividade 8 - [medição final de desempenho](desempenho-final):)
