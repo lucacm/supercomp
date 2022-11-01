@@ -2,7 +2,7 @@
 
 Na aula de hoje iremos trabalhar com um algoritmo de sorteios aleatórios para calcular o `pi`. Ele é baseado em uma técnica de Otimização, Simulação e Estimação Paramétrica chamada [Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_method).
 
-O algoritmo sequencial se baseia em sorteios de pontos dentro de um quadrado de lado `2`. Se a distância entre o ponto e o centro do quadrado for menor que 1 então o ponto cai dentro do círculo inscrito no quadrado. A quantidade de pontos que caem dentro do quadrado é proporcional a $\pi$. Veja abaixo um resumo do algoritmo.
+O algoritmo sequencial se baseia em sorteios de pontos dentro de um quadrado de lado `1`. Se a distância entre o ponto e o centro do quadrado for menor que 1 então o ponto cai dentro do círculo inscrito no quadrado. A quantidade de pontos que caem dentro do quadrado é proporcional a $\pi$. Veja abaixo um resumo do algoritmo.
 
 ![https://upload.wikimedia.org/wikipedia/commons/8/84/Pi_30K.gif](https://upload.wikimedia.org/wikipedia/commons/8/84/Pi_30K.gif)
 
