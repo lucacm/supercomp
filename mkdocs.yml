@@ -37,17 +37,13 @@ nav:
         - "10 - Comparação de desempenho": aulas/10-busca-global-II/index.md
         - "11 - Branch and Bound": aulas/11-branch-and-bound/index.md
         # - "12 - Revisão para P1": aulas/12-branch-and-bound/revisao.md
-        - "12 - Paralelismo": aulas/12-13-14-paralelismo/index.md
-        # - "14 - Paralelismo - Exercício / Efeitos Colaterais" : aulas/12-efeitos-colaterais/index.md
-        # - "15 - Paralelismo - Efeitos Colaterais II":  aulas/14-efeitos-colaterais-II/index.md
-        # - "16 - GPU - Introdução":  aulas/14-intro-gpu/index.md
+        - "12, 13 e 14 - Paralelismo": aulas/12-13-14-paralelismo/index.md
+        - "15 - Paralelismo - Exercício / Efeitos Colaterais" : aulas/15-efeitos-colaterais/index.md
+        - "16 - Paralelismo - Efeitos Colaterais II":  aulas/16-efeitos-colaterais-II/index.md
+        - "17 - GPU - Introdução":  aulas/17-intro-gpu/index.md
         # - "17 - GPU - Iteradores": aulas/15-gpu-iteradores/index.md
         # - "18 - GPU - Customização": aulas/16-gpu-customizacao/index.md
         # - "19 - GPU - Aleatoriedade": aulas/17-gpu-aleatoriedade/index.md
-        # - aulas/13-paralelismo-tarefas-dados/index.md
-        # - aulas/14-exercicios/index.md
-        # - aulas/15-efeitos-colaterais/index.md
-        # - aulas/16-efeitos-colaterais-II/index.md
         
 
     - Projeto:
